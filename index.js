@@ -68,7 +68,7 @@ class CountdownTimer {
 
 const currentDate = new Date();
 
-const targetDate = new Date("Apr 10, 2022");
+const targetDate = new Date("Jul 16, 2021");
 
 const timerDate = targetDate - currentDate;
 
