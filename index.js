@@ -47,8 +47,13 @@ class CountdownTimer {
     }, 1000);
   }
 }
+const currentDate = new Date();
 
-const timer = new CountdownTimer("#timer-1", new Date("Jul 17, 2021"));
+const targetDate = new Date("Apr 10, 2022");
+
+const timerDate = targetDate - currentDate;
+
+const timer = new CountdownTimer("#timer-1", timerDate);
 
 timer.init();
 
