@@ -28,10 +28,28 @@ class CountdownTimer {
 
   render() {
     this.element.innerHTML = `
-    <span class="value" data-value="days">${this.getDays()}</span> : 
-    <span class="value" data-value="hours">${this.getHours()}</span> : 
-    <span class="value" data-value="mins">${this.getMinutes()}</span> : 
-    <span class="value" data-value="secs">${this.getSeconds()}</span>
+      <div class="field">
+          <span class="value" data-value="days">${this.getDays()}:    
+          </span>
+          <span class="label">Days</span>
+      </div>
+    
+      <div class="field">
+          <span class="value" data-value="hours">${this.getHours()}:
+          </span>
+          <span class="label">Hours</span>
+      </div>
+    
+      <div class="field">
+          <span class="value" data-value="mins">${this.getMinutes()}:
+          </span>
+          <span class="label">Minutes</span>
+      </div>
+    
+      <div class="field">
+          <span class="value" data-value="secs">${this.getSeconds()}</span>
+          <span class="label">Seconds</span>
+      </div>
     `;
   }
 
@@ -47,6 +65,7 @@ class CountdownTimer {
     }, 1000);
   }
 }
+
 const currentDate = new Date();
 
 const targetDate = new Date("Apr 10, 2022");
